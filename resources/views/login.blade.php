@@ -1,5 +1,10 @@
 @extends('master')
 @section('content')
-<h1> Login page</h1>
-<button class="btn btn-primary">Login Now</button>
+<div class="container">
+<div class="col-sm-4 col-sn-offset">
+<form action="/login" method="Post">
+@csrf
+</form>
+</div>
+</div>
 @endsection()

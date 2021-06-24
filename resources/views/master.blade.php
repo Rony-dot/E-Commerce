@@ -14,16 +14,35 @@
     <title>E-Commerce</title>
 </head>
 <body>
-    @yield('content')
 
-    <script>
-    $(document).ready(function()
-    {
-        $("button").click(function()
-        {
-            alert("all set")
-        })
-    })
-    </script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Orders</a></li>
+       
+
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">LogOut</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    @yield('content')
 </body>
 </html>
